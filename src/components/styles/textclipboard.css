@@ -1,0 +1,16 @@
+.clipboard{
+    border: 1px solid #FFDCDC;
+    border-radius: 2px;
+    padding: 3px 0 3px 10px;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 25px;
+}
+.clipboard-text{
+    font-family: 'Poppins';
+    user-select: all;
+    overflow-x: scroll;
+}
+.red{
+    color: #FF0000;
+}

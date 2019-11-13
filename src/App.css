@@ -1,0 +1,113 @@
+.bottom-nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.app{
+    height: 100%;
+}
+.center-fab{
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    margin-top: -35px;
+    text-align: center;
+    border: 5px solid #FFAFA4;
+    border-radius: 50%;
+    color: #FFAFA4;
+    background-color: white;
+    z-index: 1000;
+}
+.page{
+    height: calc(100vh - 56px);
+    box-sizing: border-box;
+    width: 100vw;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    position: relative;
+}
+.avatar-button{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    position: absolute;
+    right: -36px;
+    top: 5px;
+}
+.loading-background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.loading-background{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50vh;
+    text-align: center;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fcf;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+@keyframes lds-ellipsis3 {
+    0% { transform: scale(1); }
+    100% { transform: scale(0); }
+}
+
+@keyframes lds-ellipsis2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(19px, 0); }
+}
+@-moz-document url-prefix() {
+    .center-fab{
+        margin-top: -5px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    h2 {
+        font-size: 30px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+}
